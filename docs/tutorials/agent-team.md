@@ -38,7 +38,7 @@
 
 </div>
 
-This tutorial extends from the [Quickstart example](/get-started/quickstart/) for [Agent Development Kit](/get-started/). Now, you're ready to dive deeper and construct a more sophisticated, **multi-agent system**.
+This tutorial extends from the [Multi-tool agent](/tutorials/multi-tool-agent/) project. Now, you're ready to dive deeper and construct a more sophisticated, **multi-agent system**.
 
 We'll embark on building a **Weather Bot agent team**, progressively layering advanced features onto a simple foundation. Starting with a single agent that can look up weather, we will incrementally add capabilities like:
 
@@ -149,7 +149,7 @@ print(f"Google API Key set: {'Yes' if os.environ.get('GOOGLE_API_KEY') and os.en
 print(f"OpenAI API Key set: {'Yes' if os.environ.get('OPENAI_API_KEY') and os.environ['OPENAI_API_KEY'] != 'YOUR_OPENAI_API_KEY' else 'No (REPLACE PLACEHOLDER!)'}")
 print(f"Anthropic API Key set: {'Yes' if os.environ.get('ANTHROPIC_API_KEY') and os.environ['ANTHROPIC_API_KEY'] != 'YOUR_ANTHROPIC_API_KEY' else 'No (REPLACE PLACEHOLDER!)'}")
 
-# Configure ADK to use API keys directly (not Vertex AI for this multi-model setup)
+# Configure ADK to use API keys directly (not Agent Platform for this multi-model setup)
 os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "False"
 
 
@@ -161,7 +161,7 @@ os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "False"
 # --- Define Model Constants for easier use ---
 
 # More supported models can be referenced here: https://ai.google.dev/gemini-api/docs/models#model-variations
-MODEL_GEMINI_2_5_FLASH = "gemini-2.5-flash"
+MODEL_GEMINI_2_5_FLASH = "gemini-flash-latest"
 
 # More supported models can be referenced here: https://docs.litellm.ai/docs/providers/openai#openai-chat-completion-models
 MODEL_GPT_4O = "openai/gpt-4.1" # You can also try: gpt-4.1-mini, gpt-4o etc.

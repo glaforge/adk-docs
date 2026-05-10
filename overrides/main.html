@@ -36,3 +36,26 @@
   <meta name="twitter:description" content="Build powerful multi-agent systems with Agent Development Kit (ADK)">
   <meta name="twitter:image" content="https://adk.dev/assets/adk-social-card.png">
 {% endblock %}
+
+<!-- top of page announcement banner here: -->
+<!--
+<span class="announce-item">
+  <strong>Headline!</strong> descriptive text
+  <a href="get-started/" target="_blank" rel="noopener">
+    Link text
+  </a>
+</span>
+-->
+{% block announce %}
+<span class="announce-item">
+  <strong>New Releases!</strong> Explore
+  <a href="/2.0/">
+    ADK Python 2.0 Beta
+  </a>
+  with workflows and agent teams, and
+  <a href="https://github.com/google/adk-js/releases/tag/adk-v1.0.0" target="_blank" rel="noopener">
+    ADK TypeScript 1.0
+  </a>
+  is now available
+</span>
+{% endblock %}
